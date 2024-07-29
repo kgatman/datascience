@@ -1,7 +1,9 @@
 # Data Scientist
 
 ### Education
+
 Computer Science, BSc [NUL]
+
 Data Science, Postgrad [UKZN]
 
 ### Projects
