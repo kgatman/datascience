@@ -1,5 +1,12 @@
+# title: Makhate Makhate
+# #logo: /assets/img/headshot_circle.png
+# #description: blah blah blah
+# show_downloads: true
+# theme: jekyll-theme-time-machine
+
 title: Makhate Makhate
-#logo: /assets/img/headshot_circle.png
-#description: blah blah blah
+logo: /assets/img/logo.png
+description: blah blah blah
 show_downloads: true
-theme: jekyll-theme-time-machine
+google_analytics:
+theme: jekyll-theme-minimal
