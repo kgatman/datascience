@@ -1,12 +1,5 @@
-# title: Makhate Makhate
-# #logo: /assets/img/headshot_circle.png
-# #description: blah blah blah
-# show_downloads: true
-# theme: jekyll-theme-time-machine
-
-title: Makhate Makhate
-logo: /assets/img/logo.png
-description: blah blah blah
+title: Data Science
+description: for all my data science work
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
