@@ -1,16 +1,17 @@
-# Data Scientist
-
-### Education
-
-Computer Science, BSc [NUL]
-
-Data Science, Postgrad [UKZN]
-
-### Projects
-  - Project 1
-  - Project 2
-
-### Work Experience
+### Deep dives
+  - Machine Learning
+  - Linear Regression
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 #### Why
-Just a site to put everything together....projects, hobbies, blog...ales 
+I'm just holding myself accountable. I'm not trying to ammase any kind of fame😎....but imagine if I was😃
