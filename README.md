@@ -25,9 +25,9 @@
 
 
 !!! info
-    * eRegister is based on => [0.92](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/20185103/Release+Notes)
-    * Main portfolio site will be found [here](https://kgatman.github.io/) <br>
-    * Still a work in progress....
+  * eRegister is based on => [0.92](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/20185103/Release+Notes)
+  * Main portfolio site will be found [here](https://kgatman.github.io/) <br>
+  * Still a work in progress....
 
 
 #### Why
