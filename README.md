@@ -4,8 +4,8 @@
   - Root Mean Square Error
   - MAE
 
-### UKZN PGDip Assignments
-  - 605
+### myAssignments UKZN PGDip
+  - STAT605
     - [Classwork Chp1](https://github.com/kgatman/datascience/tree/main/605/classwork_chp1)
 <br>
 <br>
