@@ -6,7 +6,7 @@
 
 ### UKZN PGDip Assignments
   - 605
-    - Classwork 1
+    - Classwork Chp1
 <br>
 <br>
 <br>
