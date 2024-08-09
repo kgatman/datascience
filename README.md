@@ -25,4 +25,4 @@
 
 
 #### Why
-I'm just holding myself accountable. I'm not trying to ammase any kind of fame😎....but imagine if I was😃
+I'm just holding myself accountable....
