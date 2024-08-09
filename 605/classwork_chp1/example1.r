@@ -1,4 +1,4 @@
-example <- read.csv("C:/Users/Makhate/deepdives/datascience/605/classwork_chp1/EXAMPLE.csv")
+example <- read.csv("C:/hiding_path_to_file/EXAMPLE.csv")
 
 summary(example)
 
