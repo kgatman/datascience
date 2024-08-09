@@ -1,7 +1,11 @@
 ### Deep dives
   - Machine Learning
   - Linear Regression
-  
+  - Root Mean Square Error
+  - MAE
+## UKZN PGDip Assignments
+  - 605
+    - Classwork 1
 <br>
 <br>
 <br>
