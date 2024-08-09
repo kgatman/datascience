@@ -1,7 +1,7 @@
 /*creating the data*/
 
 data example1;
-    input bench $ variety $ $ height @@;
+    input bench $ variety $ height @@;
     cards;
 1 1 19.8 1 2 21.9 1 3 16.4 1 4 14.7
 2 1 16.7 2 2 19.8 2 3 15.4 2 4 13.5
