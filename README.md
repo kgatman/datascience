@@ -18,9 +18,10 @@
 <br>
 <br>
 
-!!! info
-  * Main portfolio site will be found [here](https://kgatman.github.io/)
-  * Still a work in progress....
+
+> [!NOTE]  
+> Main portfolio site will be found [here](https://kgatman.github.io/)
+> Still a work in progress....
 
 
 #### Why
