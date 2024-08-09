@@ -20,7 +20,7 @@
 
 
 > [!NOTE]  
-> Main portfolio site will be found [here](https://kgatman.github.io/)
+> Main portfolio site will be found [here](https://kgatman.github.io/) <br>
 > Still a work in progress....
 
 
