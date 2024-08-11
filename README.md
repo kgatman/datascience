@@ -9,7 +9,7 @@
 
 ### myAssignments UKZN PGDip
   - Applied Longitudinal & Gepspatial Analysis - STAT605
-    - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/605/classwork_chp1)
+    - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/604/classwork_chp1)
 <br>
 <br>
 <br>
