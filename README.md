@@ -1,8 +1,11 @@
 ## Deep dives
+
+> [!NOTE]
+  > I plan to do deep dives on topics of interest in the data science field just to quench my curiosity as a novice. <br>
+
   - Machine Learning
   - Linear Regression
-  - Root Mean Square Error
-  - MAE
+  - Game Theory
 
 ### myAssignments UKZN PGDip
   - Applied Longitudinal & Gepspatial Analysis - STAT605
