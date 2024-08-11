@@ -1,14 +1,13 @@
 ## Deep dives
 
-> [!NOTE]
-  > I plan to do deep dives on topics of interest in the data science field just to quench my curiosity as a novice. <br>
+> I plan to do deep dives on topics of interest in the data science field just to quench my curiosity as a novice. <br>
 
   - Machine Learning
   - Linear Regression
   - Game Theory
 
 ### myAssignments UKZN PGDip
-  - Applied Longitudinal & Gepspatial Analysis - STAT604
+  - Applied Longitudinal & Geospatial Analysis - STAT604
     - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/604/classwork_chp1)
 <br>
 <br>
