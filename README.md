@@ -5,8 +5,8 @@
   - MAE
 
 ### myAssignments UKZN PGDip
-  - STAT605
-    - [Classwork Chp1](https://github.com/kgatman/datascience/tree/main/605/classwork_chp1)
+  - Applied Longitudinal & Gepspatial Analysis - STAT605
+    - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/605/classwork_chp1)
 <br>
 <br>
 <br>
