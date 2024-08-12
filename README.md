@@ -4,11 +4,23 @@
 
   - Machine Learning
   - Linear Regression
+  - Star⭐ Schema for Data Analytics
   - Game Theory
 
 ### myAssignments UKZN PGDip
   - Applied Longitudinal & Geospatial Analysis - STAT604
     - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/604/classwork_chp1)
+  - Machine Learning and Predictive Modelling Techniques - STAT605
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
