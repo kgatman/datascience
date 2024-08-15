@@ -44,4 +44,12 @@ proc mixed data=example1 covtest;
     model height=variety /s htype=3 e;
     random bench /s;
     lsmeans variety /adjust=bon diff=all e;
+    contrast "variety type 3"
+        variety 1 0 0 -1;
+        variety 0 1 0 -1;
+        variety 0 0 1 -1;
+    contrast "diff variety 1&2" variety 1 -1 0 0;
+    contrast "diff variety 2&4" variety 0 1 0 -1;
+    estimate "diff variety 1&2" variety 1 -1 0 0;
+    estimate "diff variety 2&4" variety 0 1 0 -1;
 run;
