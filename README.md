@@ -7,6 +7,10 @@
   - Star⭐ Schema for Data Analytics
   - Game Theory
 
+### Dope R Visualizations Using ggplot2
+> coming soon
+> I'm trying to figure out how I can make them interactive and not just plain png's or gifs🤔💭
+
 ### myAssignments UKZN PGDip
   - Applied Longitudinal & Geospatial Analysis - STAT604
     - [1. Linear Mixed Models Classwork ](https://github.com/kgatman/datascience/tree/main/604/classwork_chp1)
