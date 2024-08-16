@@ -11,3 +11,5 @@ repp[2]
 a<-c(50,34,111,7,24,631,20,4,7,21)
 b<-c(100,2,56,12,0,65,93,10,244,1)
 ?rnorm()
+install.packages("ggplot2")
+library(ggplot2)
