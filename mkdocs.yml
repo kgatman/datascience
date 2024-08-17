@@ -1,0 +1,79 @@
+# Project information
+site_name: Deep Dives | Makhate Makhate
+site_description: "Where We're Going to Do Data Science Deep Dives"
+site_author: "Makhate Makhate"
+# Repo
+repo_name: kgatman/datascience
+site_url: https://kgatman.github.io/datascience/
+
+# Copyright
+copyright: "Copyright &copy; 2024 Makhate Makhate"
+
+# Theme
+theme:
+        name: "material"
+        palette:
+                primary: "#2d3479"
+                accent: "indigo"
+        language: "en"
+        features:
+                - navigation.tabs
+        font:
+                text: "Roboto"
+                code: "Roboto Mono"
+
+# Nagivation
+# Nagivation
+nav:
+        - Home:
+                - "index.md"
+        - Visualizations:
+                - Star⭐ Schema:        
+                        - "viz/Scatter_Plots.md"        
+                - R:        
+                        - "viz/Scatter_Plots.md"        
+                - Python:        
+                        - "viz/Scatter_Plots.md"        
+                - Metabase:        
+                        - "viz/Scatter_Plots.md"        
+                - PowerBI:        
+                        - "viz/Scatter_Plots.md"        
+                - DHIS2:        
+                        - "viz/Scatter_Plots.md"        
+        - myAssignments UKZN PGDip:
+                - "pgdip/test.md"
+                - STAT604:        
+                        - "604/classwork_chp1/README.md" 
+                - STAT605:        
+                        - "605/README.md" 
+                
+
+
+markdown_extensions:
+        - admonition:
+        - codehilite:
+                  guess_lang: false
+        - toc:
+                  toc_depth: "1-1"
+plugins:
+        - search
+        - git-revision-date-localized
+
+extra:
+        social:
+                - icon: fontawesome/brands/github
+                  link: https://github.com/kgatman/datascience
+####
+
+# EXTENSIONS NOT WORKING - i don't know why. I'll figure it out
+
+# markdown_extensions:
+#   - codehilite:
+#       guess_lang: false
+#   - toc:
+#       toc_depth : "1-1"
+#   - footnotes
+
+# plugins:
+#   - pdf-export:
+#       combined: true
