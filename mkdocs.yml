@@ -26,8 +26,13 @@ theme:
 # Nagivation
 nav:
         - Deep Dives:
-                  - "index.md"
-                  - "contacts.md"
+                - "index.md"
+        - ggplot2:
+                - "viz/Scatter_Plots.md"        
+        - myAssignments UKZN PGDip:
+                - "pgdip/test.md"
+
+                
 
 
 markdown_extensions:
