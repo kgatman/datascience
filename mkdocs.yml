@@ -27,6 +27,7 @@ theme:
 nav:
         - Home:
                 - "index.md"
+        - Deep Dives:
                 - Machine Learining:        
                         - "viz/Scatter_Plots.md"  
                 - Linear Regressin:        

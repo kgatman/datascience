@@ -1,4 +1,4 @@
-# **Deep Dives**
+# **Home**
 
 !!! info
     * I plan to do deep dives on topics of interest in the data science field just to quench my curiosity as a novice.
