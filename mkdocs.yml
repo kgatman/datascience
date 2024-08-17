@@ -27,19 +27,25 @@ theme:
 nav:
         - Home:
                 - "index.md"
-        - Visualizations:
-                - Star⭐ Schema:        
-                        - "viz/Scatter_Plots.md"        
-                - R:        
-                        - "viz/Scatter_Plots.md"        
-                - Python:        
-                        - "viz/Scatter_Plots.md"        
-                - Metabase:        
-                        - "viz/Scatter_Plots.md"        
-                - PowerBI:        
-                        - "viz/Scatter_Plots.md"        
-                - DHIS2:        
-                        - "viz/Scatter_Plots.md"        
+                - Machine Learining:        
+                        - "viz/Scatter_Plots.md"  
+                - Linear Regressin:        
+                        - "viz/Scatter_Plots.md"  
+                - Game Theory:        
+                        - "viz/Scatter_Plots.md"  
+                - Visualizations:
+                        - Star Schema:        
+                                - "viz/Scatter_Plots.md"        
+                        - R:        
+                                - "viz/Scatter_Plots.md"        
+                        - Python:        
+                                - "viz/Scatter_Plots.md"        
+                        - Metabase:        
+                                - "viz/Scatter_Plots.md"        
+                        - PowerBI:        
+                                - "viz/Scatter_Plots.md"        
+                        - DHIS2:        
+                                - "viz/Scatter_Plots.md"        
         - myAssignments UKZN PGDip:
                 - "pgdip/test.md"
                 - STAT604:        
