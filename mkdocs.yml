@@ -28,6 +28,7 @@ nav:
         - Home:
                 - "index.md"
         - Deep Dives:
+                - "viz/index.md" 
                 - Machine Learining:        
                         - "viz/Scatter_Plots.md"  
                 - Linear Regressin:        
@@ -48,7 +49,7 @@ nav:
                         - DHIS2:        
                                 - "viz/Scatter_Plots.md"        
         - myAssignments UKZN PGDip:
-                - "pgdip/test.md"
+                - "pgdip/index.md"
                 - STAT604:        
                         - "604/classwork_chp1/README.md" 
                 - STAT605:        
