@@ -13,3 +13,7 @@ b<-c(100,2,56,12,0,65,93,10,244,1)
 ?rnorm()
 install.packages("ggplot2")
 library(ggplot2)
+
+data(mtcars)
+str(mtcars)
+print(mtcars)
