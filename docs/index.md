@@ -18,4 +18,4 @@ I also plan to do:
 
 ### [**myAssignments UKZN PGDip**](./pgdip/index.md)
 
-#### [**Main Site➡️**](https://kgatman.github.io/)
+#### [**Main Site↩️**](https://kgatman.github.io/)
