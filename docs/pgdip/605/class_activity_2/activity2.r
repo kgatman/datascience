@@ -1,9 +1,10 @@
 getwd()
-setwd("C:\\Users\\Makhate\\deepdives\\datascience\\docs\\pgdip")read.csv()
+setwd("C:\\Users\\Makhate\\deepdives\\datascience\\docs\\pgdip")
 
 #reading data
 housing_price <- read.csv("605\\class_activity_2\\ParisHousingPriceData.csv")
 
+############### Question 1 #######################
 #a
 is.data.frame(housing_price) #TRUE
 
@@ -40,3 +41,24 @@ factors_clean_housing_price <- data.frame(
   stringsAsFactors = T
 )
 str(factors_clean_housing_price)
+
+############### Question 2 #######################
+
+summary(factors_clean_housing_price)
+
+mean(factors_clean_housing_price$clean_housing_price.Price)
+
+hist(factors_clean_housing_price$clean_housing_price.Price, main = "Histogram for Price", xlab = "Housing Price", col = "blue", border = "white")
+
+plot(density(factors_clean_housing_price$clean_housing_price.Price), main = "Housing Price", xlab = "Housing Price", col = "red")
+
+############### Question 3 #######################
+ols_clean_housing_price <- lm(factors_clean_housing_price$clean_housing_price.Price ~.,data = factors_clean_housing_price)
+
+summary(ols_clean_housing_price)
+
+############### Question 4 #######################
+myCoeffecients <- coef(ols_clean_housing_price)
+
+#print them
+myCoeffecients
