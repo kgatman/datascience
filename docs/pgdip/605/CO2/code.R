@@ -38,4 +38,7 @@ View(deduplicated_CO2)
 
 ##############Stats##################
 stats_on_deduplicated_data <- as.data.frame(summary(deduplicated_CO2))
-View(stats_on_deduplicated_data[,"Freq"])
+install.packages('writexl')
+library('writexl')
+write_xlsx(stats_on_deduplicated_data,"stats_on_deduplicated_data.xlsx")
+########################################
