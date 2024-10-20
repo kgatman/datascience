@@ -36,12 +36,20 @@ library(dplyr)
 deduplicated_CO2<-factors_clean_CO2data %>% distinct()
 View(deduplicated_CO2)
 
+#### Reducing Many Factors ####
+deduplicated_CO2$Vehicle.Class[deduplicated_CO2$Vehicle.Class %in% c('SUV - SMALL', 'SUV - STANDARD', 'MINIVAN')] <- 'SUV'
+deduplicated_CO2$Vehicle.Class[deduplicated_CO2$Vehicle.Class %in% c('MID-SIZE', 'TWO-SEATER', 'FULL-SIZE', 'STATION WAGON - SMALL', 'STATION WAGON - MID-SIZE')] <- 'Sedan'
+deduplicated_CO2$Vehicle.Class[deduplicated_CO2$Vehicle.Class %in% c('VAN - CARGO', 'VAN - PASSENGER', 'PICKUP TRUCK - STANDARD', 'SPECIAL PURPOSE VEHICLE', 'PICKUP TRUCK - SMALL')] <- 'Bakkie'
+deduplicated_CO2$Vehicle.Class[deduplicated_CO2$Vehicle.Class %in% c('COMPACT', 'MINICOMPACT', 'SUBCOMPACT')] <- 'Town_Runners'
+
 ##############Stats##################
 stats_on_deduplicated_data <- as.data.frame(summary(deduplicated_CO2))
 install.packages('writexl')
 library('writexl')
 write_xlsx(stats_on_deduplicated_data,"stats_on_deduplicated_data.xlsx")
 ########################################
+
+
 
 ##########Visualising The Data################
 library(ggplot2)
@@ -55,27 +63,28 @@ ggplot(data=deduplicated_CO2,
 
 ##########Emissions By Fuel Type############
 ggplot(data=deduplicated_CO2, 
-       aes(x = CO2.Emissions.g.km., y = Fuel.Type, color=Fuel.Type)) +
-  geom_point() +
+       aes(x =Fuel.Type , y = CO2.Emissions.g.km., color=Fuel.Type)) +
+  geom_boxplot() +
   labs(title = "CO2 Emissions By Fuel Type",
-       x = "CO2 Emissions",
-       y = "Fuel Type")
+       x = "Fuel Type",
+       y = "CO2 Emissions")
 
 ##########Emissions By Cylinders############
 ggplot(data=deduplicated_CO2, 
-       aes(x = CO2.Emissions.g.km., y = Cylinders, color=Cylinders)) +
+       aes(x = Cylinders, y = CO2.Emissions.g.km., color=Cylinders)) +
   geom_point() +
   labs(title = "CO2 Emissions By Cylinders",
-       x = "CO2 Emissions",
-       y = "Cylinders")
+       x = "Cylinders",
+       y = "CO2 Emissions")
 
-##########Emissions By Transmission############
+##########Emissions By Vehicle TYpe############
 ggplot(data=deduplicated_CO2, 
-       aes(x = CO2.Emissions.g.km., y = Transmission, color=Transmission)) +
-  geom_point() +
-  labs(title = "CO2 Emissions By Transmission",
+       aes(x = Vehicle.Class, y = CO2.Emissions.g.km., color=Vehicle.Class)) +
+  geom_boxplot() +
+  labs(title = "CO2 Emissions By Vehicle Type",
        x = "CO2 Emissions",
-       y = "Transmission")
+       y = "Vehicle Type")
+
 
 ##########Emissions By Fuel Consumption############
 ggplot(data=deduplicated_CO2, 
