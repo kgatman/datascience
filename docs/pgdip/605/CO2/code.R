@@ -42,3 +42,45 @@ install.packages('writexl')
 library('writexl')
 write_xlsx(stats_on_deduplicated_data,"stats_on_deduplicated_data.xlsx")
 ########################################
+
+##########Visualising The Data################
+library(ggplot2)
+##########Emissions By Engine Size############
+ggplot(data=deduplicated_CO2, 
+       aes(x = CO2.Emissions.g.km., y = Engine.Size.L., color=Engine.Size.L.)) +
+  geom_point() +
+  labs(title = "CO2 Emissions By Engine Size",
+       x = "CO2 Emissions",
+       y = "Engine Size")
+
+##########Emissions By Fuel Type############
+ggplot(data=deduplicated_CO2, 
+       aes(x = CO2.Emissions.g.km., y = Fuel.Type, color=Fuel.Type)) +
+  geom_point() +
+  labs(title = "CO2 Emissions By Fuel Type",
+       x = "CO2 Emissions",
+       y = "Fuel Type")
+
+##########Emissions By Cylinders############
+ggplot(data=deduplicated_CO2, 
+       aes(x = CO2.Emissions.g.km., y = Cylinders, color=Cylinders)) +
+  geom_point() +
+  labs(title = "CO2 Emissions By Cylinders",
+       x = "CO2 Emissions",
+       y = "Cylinders")
+
+##########Emissions By Transmission############
+ggplot(data=deduplicated_CO2, 
+       aes(x = CO2.Emissions.g.km., y = Transmission, color=Transmission)) +
+  geom_point() +
+  labs(title = "CO2 Emissions By Transmission",
+       x = "CO2 Emissions",
+       y = "Transmission")
+
+##########Emissions By Fuel Consumption############
+ggplot(data=deduplicated_CO2, 
+       aes(x = CO2.Emissions.g.km., y = Fuel.Consumption.Comb..L.100.km., color=Fuel.Consumption.Comb..L.100.km.)) +
+  geom_point() +
+  labs(title = "CO2 Emissions By Fuel Consumption",
+       x = "CO2 Emissions",
+       y = "Consumption")
