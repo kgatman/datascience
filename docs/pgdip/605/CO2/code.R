@@ -7,7 +7,6 @@ summary(CO2data)
 
 #####Cleaning#######
 clean_CO2data <- na.omit(CO2data)
-?na.omit()
 ####
 # the clean dataframe now has 7354 entries/observations
 # 31 Obs have been ommited
