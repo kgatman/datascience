@@ -178,9 +178,12 @@ Y_ridge_pred_test <- predict(ridge_reg,X_test)
 
 #Perfomance
 MAE(Y_ridge_pred_test,Y_test)
+MAE(Y_ridge_pred_train,Y_train)
+
 
 ###########LASSO
 set.seed(123)
+library(glmnet)
 lasso_cv <- cv.glmnet(X_train, Y_train,
                       type.measure="mae",
                       alpha = 1, 
@@ -199,6 +202,14 @@ lasso_reg <- glmnet(X_train,
                     standardize = TRUE)
 summary(lasso_reg)
 coefficients(lasso_reg)
+
+#Make predictions on training and test datasets
+Y_lasso_pred_train <- predict(lasso_reg,X_train)
+Y_lasso_pred_test <- predict(lasso_reg,X_test)
+
+#Perfomance
+MAE(Y_lasso_pred_train,Y_test)
+MAE(Y_lasso_pred_test,Y_train)
 
 #### Elastic Net
 library(caret)
@@ -295,6 +306,16 @@ svr_linear1 <- train(CO2.Emissions.g.km.~.,
 svr_linear1
 plot(svr_linear1)
 summary(svr_linear1)
+##test
+set.seed(123)
+svr_linear1_test <- train(CO2.Emissions.g.km.~., 
+                     data = test_set_k,
+                     method = "svmLinear2", 
+                     preProcess = c("center","scale"),
+                     trControl = control,
+                     epsilon = 0.5)
+summary(svr_linear1_test)
+svr_linear1_test
 
 set.seed(123)
 svr_linear2 <- train(CO2.Emissions.g.km.~., 
@@ -310,6 +331,8 @@ summary(svr_linear2)
 #from the most preferred model
 varImp(svr_linear1)
 ####svr_linear2 was bad!!! I'm discarding!!!!🚮🚮🚮
+
+
 
 
 ################### KNN #################
