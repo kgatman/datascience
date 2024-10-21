@@ -102,11 +102,12 @@ numeric_deduplicated_CO2$Engine.Size.L. <- as.numeric(as.factor(deduplicated_CO2
 numeric_deduplicated_CO2$Cylinders <- as.numeric(as.factor(deduplicated_CO2$Cylinders))
 numeric_deduplicated_CO2$Transmission <- as.numeric(as.factor(deduplicated_CO2$Transmission))
 numeric_deduplicated_CO2$Fuel.Type <- as.numeric(as.factor(deduplicated_CO2$Fuel.Type))
-
+###
+# in class, the package dummy was used to preprocess the dataset
 #############Splitting the data ###################
 library(caTools)
 set.seed(123) #to make sure we'll be using the same training dataset
-split=sample.split(deduplicated_CO2$CO2.Emissions.g.km.,SplitRatio = 0.8)
+split=sample.split(numeric_deduplicated_CO2$CO2.Emissions.g.km.,SplitRatio = 0.8)
 
 training_set = subset(numeric_deduplicated_CO2,split==TRUE)
 test_set = subset(numeric_deduplicated_CO2,split==FALSE)
@@ -263,5 +264,115 @@ visTree(RegTree) ###beautiful tree this one🥰
 ##################################################################
 ###############   SVR | KNN | Neural Network #####################
 ##################################################################
+library(caTools)
+set.seed(123)
+split_k = sample.split(numeric_deduplicated_CO2$CO2.Emissions.g.km.,
+                       SplitRatio = 0.8)
+training_set_k = subset(numeric_deduplicated_CO2,split_k == TRUE)
+test_set_k = subset(numeric_deduplicated_CO2,split_k == FALSE)
 
-###
+library(caret)
+
+control <- trainControl(method = "cv", number = 10)
+
+set.seed(123)
+svr_linear <- train(CO2.Emissions.g.km.~., 
+                    data = training_set_k,
+                    method = "svmLinear2", 
+                    preProcess = c("center","scale"),
+                    trControl = control)
+svr_linear
+plot(svr_linear)
+summary(svr_linear)
+
+set.seed(123)
+svr_linear1 <- train(CO2.Emissions.g.km.~., 
+                    data = training_set_k,
+                    method = "svmLinear2", 
+                    preProcess = c("center","scale"),
+                    trControl = control,
+                    epsilon = 0.5)
+svr_linear1
+plot(svr_linear1)
+summary(svr_linear1)
+
+set.seed(123)
+svr_linear2 <- train(CO2.Emissions.g.km.~., 
+                     data = training_set_k,
+                     method = "svmLinear2", 
+                     preProcess = c("center","scale"),
+                     trControl = control,
+                     epsilon = 0.7)
+svr_linear2
+plot(svr_linear2)
+summary(svr_linear2)
+
+#from the most preferred model
+varImp(svr_linear1)
+####svr_linear2 was bad!!! I'm discarding!!!!🚮🚮🚮
+
+
+################### KNN #################
+set.seed(123)
+knn <- train(CO2.Emissions.g.km.~.,
+             data = training_set_k, 
+             method = "knn", 
+             preProcess=c("center", "scale"), 
+             trControl = control)
+knn
+plot(knn)
+
+
+
+pred__train_knn = predict(knn,newdata=training_set_k)
+pred_test_knn = predict(knn,newdata=test_set_k)
+
+#Performance on training set:
+
+rbind("knn Train",c("MAE","RMSE"),c(round(MAE(pred__train_knn,training_set_k$CO2.Emissions.g.km.),3),  
+                                    round(RMSE(pred__train_knn,training_set_k$CO2.Emissions.g.km.),3)))
+
+
+## Performance on test set:
+
+rbind("knn Test", c("MAE","RMSE"), c(round(MAE(pred_test_knn,test_set_k$CO2.Emissions.g.km.),3),
+                                     round(RMSE(pred_test_knn,test_set_k$CO2.Emissions.g.km.),3)))
+
+
+### Neural Networks
+set.seed(123)
+NN <- train(CO2.Emissions.g.km.~., 
+            data=training_set_k, 
+            method="nnet", 
+            preProcess=c("center", "scale"), 
+            trControl=control, 
+            linout=TRUE,
+            maxit=1000)
+NN
+
+plot(NN)
+install.packages("NeuralNetTools")
+library(NeuralNetTools)
+
+plotnet(NN)
+
+# Prediction of NN:
+
+pred__train_NN1 = predict(NN,newdata=training_set_k)
+pred_test_NN1 = predict(NN,newdata=test_set_k)
+
+#Performance on training set:
+library(MLmetrics)
+rbind("NN Train",c("MAE","RMSE"),c(round(MAE(pred__train_NN1,training_set_k$CO2.Emissions.g.km.),3),  
+                                   round(RMSE(pred__train_NN1,training_set_k$CO2.Emissions.g.km.),3)))
+
+
+## Performance on test set:
+
+rbind("NN Test", c("MAE","RMSE"), c(round(MAE(pred_test_NN1,test_set_k$CO2.Emissions.g.km.),3),
+                                    round(RMSE(pred_test_NN1,test_set_k$CO2.Emissions.g.km.),3)))
+
+
+# Variable importances for the NN:
+library(caret)
+varImp(NN)
