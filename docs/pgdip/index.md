@@ -7,3 +7,5 @@
     - [1. Class Activity 1 - Housing Price Prediction](https://github.com/kgatman/datascience/tree/main/docs/pgdip/605/class_activity_1)
     - [2. Class Activity 2 - Paris House Pricing ](https://github.com/kgatman/datascience/tree/main/docs/pgdip/605/class_activity_2)
     - [3. Final Practical Assignment - DataSet2 | CO<sub>2</sub> Emmissions](https://github.com/kgatman/datascience/tree/main/docs/pgdip/605/CO2)
+  - Time Series and Forecasting Econometrics - STA602
+    - [Box-Jenkins Methodology Assignment](https://github.com/kgatman/datascience/tree/main/docs/pgdip/602/)
