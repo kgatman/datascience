@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kgatman.github.io/datascience/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/pgdip/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/pgdip/test/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://kgatman.github.io/datascience/pgdip/602/box-jenkins/</loc>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/pgdip/604/classwork_chp1/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/pgdip/605/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/viz/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://kgatman.github.io/datascience/viz/Scatter_Plots/</loc>
-         <lastmod>2025-03-19</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
 </urlset>
