@@ -9,5 +9,6 @@
     - [3. Final Practical Assignment - DataSet2 | CO<sub>2</sub> Emmissions](https://github.com/kgatman/datascience/tree/main/docs/pgdip/605/CO2)
   - Time Series and Forecasting Econometrics - STAT602
     - [Box-Jenkins Methodology Assignment](https://github.com/kgatman/datascience/tree/main/docs/pgdip/602/)
+    - [ARIMA & GARCH Assignment](https://github.com/kgatman/datascience/tree/main/docs/pgdip/606/Assignment2_May_2025/)
   - Applied Binary Classification and Matching - STAT606
     - [Binary Classification](https://github.com/kgatman/datascience/tree/main/docs/pgdip/606/)
